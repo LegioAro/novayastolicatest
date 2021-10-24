@@ -1,0 +1,62 @@
+.select {
+    position: relative;
+    cursor: pointer;
+    &__result {
+        padding-right: 10px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "\e900";
+            font-family: "icomoon";
+            right: 0;
+            top: 50%;
+            font-size: 5px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__hide {
+        display: none;
+    }
+
+    &__list {
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.3s;
+        border: 1px solid #0074e1;
+
+        &.active {
+            transform: scaleY(1);
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #0074e1;
+        background-color: #fff;
+        cursor: pointer;
+        &:last-child {
+            border-bottom: 0;
+        }
+        input {
+            display: none;
+        }
+        input:checked + label {
+            background-color: #0074e1;
+            color: #fff;
+        }
+        label {
+            padding: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+    }
+
+    &__label {
+    }
+}

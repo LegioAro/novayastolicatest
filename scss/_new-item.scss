@@ -1,0 +1,35 @@
+.new-item {
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    &__img {
+        width: 100%;
+        height: calc(180px + (350 - 180) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .subtitle {
+        padding: 0 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .rubric {
+        &__title {
+            background-color: #0074e1;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .new-item {
+        &__img {
+            height: 350px;
+        }
+    }
+}

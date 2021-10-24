@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <title>Post</title>
+
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/blog-page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__item">
+                    <div class="burger__btn">
+                        <span></span>
+                    </div>
+                    <nav class="header__navigation">
+                        <ul class="header__navigation-items">
+                            <li class="header__navigation-item">
+                                <a href="">Новини</a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="">Відео</a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="">Події</a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="">Долучайся</a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="">LIVE</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="header__item">
+                    <ul class="header__social">
+                        <li class="header__social-item">
+                            <a href=""><span class="icon-twitter"></span></a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href=""><span class="icon-telegram"></span></a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href=""><span class="icon-instagram"></span></a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href=""><span class="icon-facebook"></span></a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href=""><span class="icon-youtube"></span></a>
+                        </li>
+                    </ul>
+                    <div class="select">
+                        <div class="select__result ">
+                            <p>UA</p>
+                        </div>
+                        <ul class="select__list">
+                            <li class="select__item">
+                                <input type="radio" name="sale-type-property" checked value="sale-flat" id="sale-flat"
+                                    class="select__input">
+                                <label for="sale-flat" class="select__label">UA</label>
+                            </li>
+                            <li class="select__item">
+                                <input type="radio" name="sale-type-property" value="sale-house" id="sale-house"
+                                    class="select__input">
+                                <label for="sale-house" class="select__label">US</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-hide">
+                            <input type="text" placeholder="Пошук по сайту" value="" name=""
+                                class="header__search-hide-input">
+                            <span class="icon-search"></span>
+                        </div>
+                        <div class="header__search-btn">
+                            <span></span>
+                            <p>Пошук</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="burger">
+        <div class="burger__block">
+            <div class="burger__logo">
+                <img src="img/logo_white.png" alt="">
+            </div>
+            <div class="burger__items">
+                <div class="burger__item">
+                    <a href="" class="burger__item-title">НОВИНИ:</a>
+                    <ul class="burger__item-links">
+                        <li>
+                            <a href="" class="burger__item-link">ПОЛІТИКА</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">СУСПІЛЬСТВО</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">ЕКОНОМІКА</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">ПОДІЇ</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="burger__item">
+                    <a href="" class="burger__item-title">ВІДЕО</a>
+                    <ul class="burger__item-links">
+                        <li>
+                            <a href="" class="burger__item-link">ІНТЕРВ’Ю</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">РОЗСЛІДУВАННЯ</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">З МІСЦЯ ПОДІЇ</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="burger__item">
+                    <a href="" class="burger__item-title">ПОДІЇ</a>
+                    <ul class="burger__item-links">
+                        <li>
+                            <a href="" class="burger__item-link">АНОНСИ</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">ОСТАННІ ПОДІЇ</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <div class="burger__item">
+                    <a href="" class="burger__item-title">ДОЛУЧАЙСЯ</a>
+                    <ul class="burger__item-links">
+                        <li>
+                            <a href="" class="burger__item-link">ПРО НАС</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">ЗВЕРНЕННЯ</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">ПІДТРИМАТИ</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="burger__item">
+                    <a href="" class="burger__item-title">LIVE</a>
+                    <ul class="burger__item-links">
+                        <li>
+                            <a href="" class="burger__item-link">АНОНСИ</a>
+                        </li>
+                        <li>
+                            <a href="" class="burger__item-link">ВІДЕО</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="burger__social">
+                <a href="" class="burger__social-item">
+                    <span class="icon-twitter"></span>
+                </a>
+                <a href="" class="burger__social-item">
+                    <span class="icon-telegram"></span>
+                </a>
+                <a href="" class="burger__social-item">
+                    <span class="icon-instagram"></span>
+                </a>
+                <a href="" class="burger__social-item">
+                    <span class="icon-facebook"></span>
+                </a>
+                <a href="" class="burger__social-item">
+                    <span class="icon-youtube"></span>
+                </a>
+            </div>
+            <div class="burger__close"></div>
+        </div>
+    </div>
+
+    <main class="blog-page">
+
+        <div class="content">
+            <div class="container">
+                <div class="content__wrapper">
+                    <div class="content__body">
+                        <div class="breadcrumbs">
+                            <div class="breadcrumbs__block">
+                                <span>
+                                    <a class="breadcrumbs__item breadcrumbs__item-first"
+                                        href="https://grandrealty.com.ua/">Главная Главная Главная</a>
+                                    <span>
+                                        <a class="breadcrumbs__item"
+                                            href="https://grandrealty.com.ua/property/">Недвижимость Главная Главная</a>
+                                        <span>
+                                            <p class="breadcrumbs__item breadcrumbs__item-last">Аренда Главная Главная
+                                            </p>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="breadcrumbs__time">
+                                <div class="breadcrumbs__time-item">09.10.2021</div>
+                                <div class="breadcrumbs__time-item">22:15</div>
+                            </div>
+                        </div>
+                        <article class="blog-page__about">
+                            <img class="blog-page__about-postimg" src="img/blog-page/1.png" alt="">
+                            <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor sit amet</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                mus.</h2>
+                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                                mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                                viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                                nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+                                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit
+                                id, lorem. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit
+                                amet orci eget eros faucibus tincidunt. Aenean vulputate eleifend tellus. Aenean leo
+                                ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+                            <a href="">Lorem ipsum dolor</a>
+                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                                mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                                viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                                nisi vel augue. </p>
+                            <img src="img/blog-page/2.png" alt="">
+                            <img src="img/blog-page/3.png" alt="">
+                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                                mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                vulputate eleifend tellus. </p>
+                            <div class="blog-page__about-autor">
+                                Автор: Lorem Ipsum
+                            </div>
+                        </article>
+                        <div class="copy-link">
+                            <div class="copy-link__title">Поділитись посиланням:</div>
+                            <div class="copy-link__block">
+                                <div class="copy-link__btn">
+                                    <p class="copy-link__text">https://nova.stolytsia/news/57227/</p>
+                                </div>
+                                <div class="copy-link__social">
+                                    <a href="" class="copy-link__social-item">
+                                        <img src="img/blog-page/social/twitter.png" alt="">
+                                    </a>
+                                    <a href="" class="copy-link__social-item">
+                                        <img src="img/blog-page/social/telegram.png" alt="">
+                                    </a>
+                                    <a href="" class="copy-link__social-item">
+                                        <img src="img/blog-page/social/instagram.png" alt="">
+                                    </a>
+                                    <a href="" class="copy-link__social-item">
+                                        <img src="img/blog-page/social/facebook.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="copy-link__alert">Скопировано в буфер обмена</div>
+                        </div>
+                    </div>
+                    <aside class="sidebar">
+                        <div class="similar">
+                            <div class="title">
+                                <div class="title__text">
+                                    <div class="title__decor"></div>
+                                    <a href="">СХОЖІ новини</a>
+                                </div>
+                                <a href="" class="link">
+                                    <p> Всі відео</p>
+                                    <span class="icon-arrow-right"></span>
+                                </a>
+                            </div>
+                            <div class="similar__block">
+                                <div class="similar__item">
+                                    <div class="similar__item-img">
+                                        <img src="img/sidebar/1.png" alt="">
+                                    </div>
+                                    <a href="" class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus.</a>
+                                </div>
+                                <div class="similar__item">
+                                    <div class="similar__item-img">
+                                        <img src="img/sidebar/2.png" alt="">
+                                    </div>
+                                    <a href="" class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus.
+                                        Aenean commodo ligula eget dolor. Cum sociis natoque penatibus.</a>
+
+                                </div>
+                            </div>
+                            <div class="similar__link">
+                                <a href="" class="link" href="">
+                                    <p>Всі новини</p><span class="icon-arrow-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo-block">
+                    <div class="footer__logo">
+                        <img src="img/logo_white.png" alt="">
+                    </div>
+                    <div class="footer__logo-text">
+                        © 2021 <br>
+                        НОВА СТОЛИЦЯ. <br>
+                        All rights reserved.
+                    </div>
+                </div>
+                <div class="footer__links-wrapper">
+                    <div class="footer__links-item">
+                        <a href="" class="footer__link-title">Новини</a>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">Політика</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Економіка</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Суспільство</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Події</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-item">
+                        <a href="" class="footer__link-title">Відео</a>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">Інтерв’ю</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Розслідування</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">З місця події</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-item">
+                        <a href="" class="footer__link-title">Події</a>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">Анонси</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Останні події</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-item">
+                        <a href="" class="footer__link-title">Долучайся</a>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">Про нас</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Звернення</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Підтримати</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__links-item">
+                        <a href="" class="footer__link-title">LIVE</a>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">Анонси</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Відео</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__social-items">
+                        <a href="" class="footer__social-item"><span class="icon-twitter"></span>
+                        </a>
+                        <a href="" class="footer__social-item"><span class="icon-telegram"></span>
+                        </a>
+                        <a href="" class="footer__social-item"><span class="icon-instagram"></span>
+                        </a>
+                        <a href="" class="footer__social-item"><span class="icon-facebook"></span>
+                        </a>
+                        <a href="" class="footer__social-item"><span class="icon-youtube"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

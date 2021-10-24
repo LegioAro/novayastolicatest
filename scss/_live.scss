@@ -1,0 +1,60 @@
+.live {
+    margin-bottom: 30px;
+    &__wrapper {
+        background: #323232;
+        border-radius: 15px;
+        padding: 18px 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text-block {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text-color {
+        font-size: 20px;
+        color: #ff0202;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        span {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    }
+
+    &__text {
+        color: #fff;
+        display: inline;
+    }
+}
+
+@media (max-width: 768px) {
+    .live {
+        &__text {
+            text-overflow: ellipsis; /* will make [...] at the end */
+            width: 370px; /* change to your preferences */
+            white-space: nowrap; /* paragraph to one line */
+            overflow: hidden; /* older browsers */
+        }
+    }
+}
+@media (max-width: 500px) {
+    .live {
+        &__text {
+            width: 224px; /* change to your preferences */
+            font-size: 12px;
+        }
+        &__text-color {
+            margin-right: 10px;
+            font-size: 14px;
+            span {
+                font-size: 12px;
+                margin-right: 5.5px;
+            }
+        }
+    }
+}

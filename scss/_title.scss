@@ -1,0 +1,37 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    &__decor {
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #f59f02;
+        margin-right: 10px;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        a,
+        p {
+            font-weight: bold;
+            font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1920 - 320)));
+            text-transform: uppercase;
+        }
+    }
+    &__link {
+    }
+}
+
+@media (min-width: 1920px) {
+    .title {
+        &__text {
+            p {
+                font-size: 26px;
+            }
+        }
+    }
+}
